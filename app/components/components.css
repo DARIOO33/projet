@@ -1,0 +1,229 @@
+:root {
+    --primary: #1e90ff;
+}
+.color-primary{
+    color: var(--primary);
+}
+section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+section h2{
+    text-align: center;
+    margin: 12px 0px;
+
+    font-size: 2.5rem;
+}
+section h3{
+    font-weight: 400;
+    width: 60%;
+    margin: 12px 0px;
+    text-align: center;
+
+}
+.searchIcon{
+    transform: scale(1.6);
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    
+    
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customInput input{
+    margin-left: 25px;
+    font-size: 1.25rem;
+    border: none;
+
+}
+input:focus{
+    outline: none;
+}
+.primarybtn button{
+    background-color: var(--primary);
+    font-size: 1.25rem;
+    border: none;
+    margin: 18px 0px;
+    padding: 12px 35px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+}
+.primarybtn button:hover{
+    background-color: #0e6cca;
+
+}
+.customInput{
+    display: flex;
+    align-items: center;
+    border: 1px solid ;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 8px 16px ;
+}
+header{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+header h1{
+    font-size: 1.5rem;
+    padding: 12px 0px ;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+header ul li {
+    margin: 0px 10px ;
+}
+header ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+header h1,header ul,.login-signup{
+    width: 33%;
+}
+.login-signup {
+    display: flex;
+    justify-content: end;
+    font-size: 26px;
+    color: rgb(83, 80, 80);
+}
+.login-signup p{
+    cursor: pointer;
+}
+
+
+
+
+.log-card{
+    background-color: rgb(246, 244, 242);
+    width: 15%;
+    float: right;
+    padding-top: 5px;
+    margin-top: -10px;
+    /* display: none; */
+}
+
+
+.log-card ul{
+    list-style: none;
+    padding: 1px 0px;
+}
+
+.log-card ul li{
+    margin: 2px 0px;
+}
+.log-card ul li a {
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+.log-card ul li a:hover{
+    background-color: rgb(230, 228, 224);
+
+}
+
+.burgerMenu{
+    display: none;
+}
+
+.close-icon-container{
+    display: flex;
+    justify-content: end;
+    font-size: 1.3rem;
+    position: relative;
+}
+.close-icon-container .close-icon{
+    position: absolute;
+    left: 85%;
+    top: -5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1200px) {
+    .close-icon-container .close-icon{
+    left: 80%;
+        
+    }
+}
+    
+@media screen and (max-width:750px) {
+    header{
+        height: 100%;
+        justify-content: space-between;
+        }
+        header ul.active{
+            margin-top: 0%;
+         }
+    header ul {
+        margin: 0;
+        margin-top: -100%;
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        background-color: #1e90ff;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 45%;
+        z-index: 1;
+    }
+ 
+    header h1{
+        text-align: center;
+        position: relative;
+        z-index: 9;
+        position: relative;
+
+
+        width: 70%;
+    }
+    header ul li{
+        margin: 20px 0px;
+    }
+   header h1.active{
+color: white;
+transition: .5s;
+   }
+    
+    .burgerMenu{
+        margin-top: .5rem;
+        width: 15%;
+        font-size: 2rem;
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+   
+        
+       
+    }
+    header .login-signup{
+        width: 15%;
+
+    }
+    .log-card{
+        
+        width: 30%;
+    }
+}
