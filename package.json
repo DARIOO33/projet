@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/dropdown": "^2.3.9",
+    "@nextui-org/input": "^2.4.8",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
