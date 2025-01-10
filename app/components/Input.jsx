@@ -1,13 +1,18 @@
-import './components.css'
-import { IoSearchSharp } from "react-icons/io5";
+"use client"
 
-export default (params) => {
-  return (
-    <div className="customInput">
-        <span className='searchIcon'>
-        <IoSearchSharp />
-        </span>
-        <input type="text" placeholder="Enter Your Destination" />
-    </div>
-  )
+export default ({label,type,placeholder}) => {
+ return (
+  <div className="inputContainer">
+          <label htmlFor="">{label} :</label>
+      
+      
+  <input
+      className="max-w-xs"
+      label={label}
+      placeholder={placeholder}
+      type={type}
+      variant="bordered"
+    />
+  </div>  
+ ) 
 }
