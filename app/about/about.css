@@ -1,0 +1,281 @@
+
+
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("hero-banner.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: white;
+  color: #2563eb;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.stats-container {
+  /* margin-top: -60px; */
+  padding: 0 20px;
+  /* max-width: 1200px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card {
+  text-align: center;
+  padding: 20px;
+  margin-top: 3rem;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  background: #eff6ff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.icon {
+  color: #2563eb;
+  width: 30px;
+  height: 30px;
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin: 0 0 5px;
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: #1f2937;
+  margin: 0;
+  font-weight: 500;
+}
+
+.stat-sublabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 5px 0 0;
+}
+
+.about-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background: #f3f4f6;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-button.active {
+  background: #2563eb;
+  color: white;
+}
+
+.tab-content h2 {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.tab-content p {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+.grid-item {
+  aspect-ratio: 1;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.contact-section {
+  background: #f9fafb;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.contact-intro {
+  font-size: 1.25rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  background: #eff6ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #2563eb;
+}
+
+.contact-card h3 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}

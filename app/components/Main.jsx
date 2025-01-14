@@ -1,8 +1,11 @@
+"use client"
 import React from "react"
 import "./components.css"
 import PrimaryButton from "./PrimaryButton"
 import Sinput from "./Sinput"
-export default (params) => {
+
+export default () => {
+
   return (
     <React.Fragment>
       <section>
