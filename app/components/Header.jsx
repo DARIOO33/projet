@@ -28,7 +28,9 @@ export default (params) => {
   }, [activeIndex]);
   useEffect(()=>{
     console.log(pathname);
-    
+    if (pathname == "/"){
+      setActiveIndex(1)
+    }
     if (pathname == "/solutions"){
       setActiveIndex(2)
     }

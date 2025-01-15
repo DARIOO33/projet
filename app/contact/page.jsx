@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
-
 import "./contact.css";
 import Input from "../components/Input";
 import Mapcomponent from "./Mapcomponent";
