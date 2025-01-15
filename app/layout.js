@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
      
       <body className={raleway.className}>
-        <div className="container">
         <Header/>
+        <div className="container">
         {children}
         </div>
         <Footer/>
