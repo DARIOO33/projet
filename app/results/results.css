@@ -1,0 +1,81 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    padding: 24px;
+    width: 90%;
+    margin: auto;
+}
+@media (max-width: 1200px) {
+    .card-container {
+        width: 80%;
+        margin: auto;
+      padding: 16px;
+      gap: 16px;
+    }
+  }
+@media (max-width: 768px) {
+    .card-container {
+        margin: auto;
+        width: 80%;
+        padding: 16px;
+        gap: 16px;
+    }
+}
+
+.card {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.activity-type {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border-radius: 16px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.activity-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.info-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    fill: #666;
+}
