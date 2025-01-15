@@ -1,9 +1,13 @@
+"use client"
 import DatePickerYearsOrder from "./DatePicker"
 import CountryPicker from "./CountryPicker"
 import PrimaryButton from "./PrimaryButton"
 import Searchbutton from "./Searchbutton"
+import { useState } from "react"
+export default ({reg}) => {
 
-export default (params) => {
+  const [country, setCountry] = useState('Tunisia');
+  const [region, setRegion] = useState(reg);
   return (
     <form className="planning-informations">
       <h1>
@@ -12,10 +16,15 @@ export default (params) => {
         <div className="inputs">
 
 
-        <CountryPicker/>
+        <CountryPicker 
+        country={country} 
+        setCountry={setCountry}
+        region={region} 
+        setRegion={setRegion}/>
+        
         <DatePickerYearsOrder/>
         </div>
-        <Searchbutton/>
+        <Searchbutton country={country} region={region}/>
       </form>
   )
 }

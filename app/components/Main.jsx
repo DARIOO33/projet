@@ -1,13 +1,7 @@
-"use client"
-import React, { useState } from "react"
 import "./components.css"
-import Sinput from "./Sinput"
 import Planner from "./Planner"
-
-
-
-
-export default () => {
+import React from "react"
+export default ({region}) => {
 
   
   return (
@@ -16,7 +10,7 @@ export default () => {
       <div className="hero">
         
       </div>
-      <Planner/>
+      <Planner region={region}/>
       </section>
     </React.Fragment>
   )

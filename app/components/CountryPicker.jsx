@@ -2,12 +2,12 @@
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector"
 import { useState } from "react"
 
-export default (params) => {
-    const [country, setCountry] = useState('Tunisia');
-    const [region, setRegion] = useState('Medenine');
+export default ({country,setCountry,region,setRegion}) => {
+   
     const onChangeCountry = (val) => {
 
         setCountry(val);
+        setRegion('');
         if (!val) {
             setRegion('');
         }
