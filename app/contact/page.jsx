@@ -44,9 +44,9 @@ const ContactPage = () => {
               <MapPin className="info-icon" />
               <h3>Our Location</h3>
               <p>
-                123 Travel Street
+                Djerba Midoun
                 <br />
-                Adventure City, AC 12345
+                Residence Nour
               </p>
             </div>
 
@@ -54,9 +54,9 @@ const ContactPage = () => {
               <Phone className="info-icon" />
               <h3>Phone Number</h3>
               <p>
-                +1 (555) 123-4567
+                +216 55 123 567
                 <br />
-                +1 (555) 987-6543
+                +216 55 987 543
               </p>
             </div>
 
@@ -64,9 +64,9 @@ const ContactPage = () => {
               <Mail className="info-icon" />
               <h3>Email Address</h3>
               <p>
-                hello@travelsite.com
+                contact@domain.com
                 <br />
-                support@travelsite.com
+                support@domain.com
               </p>
             </div>
 

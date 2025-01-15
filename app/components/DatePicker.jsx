@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react";
+import "./components.css"
 export default function DatePickerYearsOrder() {
     const currentDate = new Date();
     const d = currentDate.getDate().toString().padStart(2, '0'); // Ensures day has two digits
@@ -6,24 +10,21 @@ export default function DatePickerYearsOrder() {
 
     const min = `${y}-${m}-${d}`;
     const max = `${y + 4}-12-31`;
-
+    const [value,setValue] = useState(min)
     return (
         <label htmlFor="date-picker">
             <input
                 type="date"
                 id="date-picker"
                 min={min}
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
                 max={max}
                 style={{
                     backgroundColor: 'white',
                     color: 'black',
-                    padding: 10,
                     fontSize: 16,
-                    width: "25%",
                     borderRadius: 8,
-                    border: "none",
-                    boxShadow: "0px 7px 46px rgba(0, 0, 0, 0.17)",
-                    marginLeft: 8,
                 }}
             />
         </label>

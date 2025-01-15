@@ -305,7 +305,17 @@ div[data-slot="base"] ul li:hover {
   box-shadow: unset;
   transform: unset;
 }
-
+.inputs input,.inputs select{
+  width: 22%;
+  padding: .5rem .2rem;
+  margin: 0px 4px ;
+  border:1px solid black;
+}
+.planning-informations h1{
+  color: var(--primary);
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
 .blank {
   position: absolute;
   top: 0;
@@ -382,6 +392,11 @@ ul li a.active {
   .form {
     width: 65%;
   }
+  header .login-signup .authbtns button:nth-child(1){
+    display: none;
+
+  }
+ 
 }
 
 @media screen and (max-width: 750px) {
@@ -393,7 +408,13 @@ ul li a.active {
   header ul.active {
     margin-left: 0%;
   }
-
+.inputs input,.inputs select{
+  margin: 12px auto ;
+  width: 60vw;
+  border: 1px solid black;
+  display: block;
+  text-align: left;
+}
   header ul {
     margin: 0;
     margin-left: -100%;
@@ -416,34 +437,28 @@ ul li a.active {
   header h1 {
     text-align: center;
     position: relative;
-
-    width: 70%;
+    font-size: 1.2rem;
   }
 
   header ul li {
     margin: 20px 0px;
   }
 
-  header h1.active {
-    color: white;
-    transition: 0.5s;
-  }
+ 
   .acti {
     color: white;
   }
   .burgerMenu {
     margin-top: 0.5rem;
     width: 15%;
-    font-size: 2rem;
+    font-size: 1.75rem;
     display: block;
     z-index: 2;
     cursor: pointer;
   }
 
-  header .login-signup {
-    width: 15%;
-  }
-
+ 
+  
   .inputContainer {
     width: 80%;
   }
@@ -461,9 +476,10 @@ ul li a.active {
     color: var(--primary);
   }
   header .h1 {
-    width: 60%;
+    width: 40%;
+    
   }
   .login-signup {
-    width: 20%;
+    
   }
 }

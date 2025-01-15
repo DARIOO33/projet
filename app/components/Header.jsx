@@ -102,12 +102,6 @@ export default (params) => {
         </ul>
 
         <div className="login-signup">
-          <div className="language">
-            <select name="" id="">
-              <option value="1">En</option>
-              <option value="2">Fr</option>
-            </select>
-          </div>
           <div className="authbtns">
             <button onClick={() => router.push("/register")}>Sign up</button>
             <button onClick={() => router.push("/login")}>Sign in</button>

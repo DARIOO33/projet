@@ -1,7 +1,9 @@
+"use client"
 export default (params) => {
+
   return(
     <div className="primarybtn">
-    <button>
+    <button  type="submit">
         Search Now
     </button>
     </div>
