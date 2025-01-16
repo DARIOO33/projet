@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import { usePathname } from 'next/navigation'
-
+import Link from "next/link";
 import Popup from "./Popup";
 import Blank from "./Blank";
 import SecondaryButton from "./SecondaryButton";
@@ -42,10 +42,8 @@ export default (params) => {
     }
     
   },[pathname])
-  const handleClick = (index, href) => {
+  const handleClick = () => {
     setActiveMenu(false);
-    setActiveIndex(index);
-    router.push(href);
   };
   return (
     <>
@@ -58,46 +56,46 @@ export default (params) => {
           {activeMenu && <IoMdClose />}
         </div>
         <div className="h1">
-          <h1
-            onClick={() => router.push("/")}
-            className={activeLogo ? "active color-primary" : "color-primary"}
-          >
+          <Link href={"/"}>
+          <h1 className="color-primary">
             {companyName}
           </h1>
+            </Link>
         </div>
 
         <ul className={activeMenu ? "active" : ""}>
           <li>
-            <a
+            <Link href={"/"}
               className={activeIndex == 1 ? "active" : ""}
               onClick={() => handleClick(1, "/")}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link href={"/solutions"}
               className={activeIndex == 2 ? "active" : ""}
               onClick={() => handleClick(2, "/solutions")}
             >
               Solutions
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link href={"/about"}
               className={activeIndex == 3 ? "active" : ""}
               onClick={() => handleClick(3, "/about")}
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
+            href={"/contact"}
               className={activeIndex == 4 ? "active" : ""}
               onClick={() => handleClick(4, "/contact")}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 

@@ -224,6 +224,7 @@ h1 {
 
 header {
   display: flex;
+  top: 0;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -321,6 +322,7 @@ div[data-slot="base"] ul li:hover {
   font-weight: bold;
 }
 .blank {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
