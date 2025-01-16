@@ -8,11 +8,13 @@ export default (params) => {
   const country = searchParams.get('country')
   const region = searchParams.get('region')
   const date = searchParams.get('date')
+  console.log(date);
+  
   
 
   return (
     <>
-    <Main region={region}/>
+    <Main/>
     <div className="card-container">
       <Card/>
       <Card/>

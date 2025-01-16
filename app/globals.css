@@ -9,7 +9,7 @@
 .container {
   margin: auto;
   height: auto;
-  width: 78rem;
+  width: 74rem;
 }
 
 @media screen and (max-width: 1200px) {

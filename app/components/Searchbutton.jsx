@@ -1,14 +1,20 @@
 "use client"
 import { useRouter } from "next/navigation"
-export default ({country,region}) => {
+import { useSearchParams } from "next/navigation"
+
+export default ({country,region,value}) => {
+  const searchParams = useSearchParams()
   const router = useRouter()
   const handleclick = (e) => {
     e.preventDefault()
-    if (country=="" || region =="" ){
+    if (searchParams.get('date') == value && searchParams.get('country') == country && searchParams.get('region') == region){
+      return 
+    }
+    if (country=="" || region =="" || value==""){
       alert("Check your informations")
       return
     }
-    router.push(`results?country=${country}&region=${region}&date=01-01-02`)
+    router.push(`results?country=${country}&region=${region}&date=${value}`)
   }
   return(
     <div className="primarybtn">

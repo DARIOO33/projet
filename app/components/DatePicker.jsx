@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import "./components.css"
-export default function DatePickerYearsOrder() {
+export default function DatePickerYearsOrder({value,setValue}) {
     const currentDate = new Date();
     const d = currentDate.getDate().toString().padStart(2, '0'); // Ensures day has two digits
     const m = (currentDate.getMonth() + 1).toString().padStart(2, '0'); // Ensures month has two digits
@@ -10,7 +10,6 @@ export default function DatePickerYearsOrder() {
 
     const min = `${y}-${m}-${d}`;
     const max = `${y + 4}-12-31`;
-    const [value,setValue] = useState(min)
     return (
         <label htmlFor="date-picker">
             <input

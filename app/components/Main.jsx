@@ -1,7 +1,7 @@
 import "./components.css"
 import Planner from "./Planner"
 import React from "react"
-export default ({region}) => {
+export default () => {
 
   
   return (
@@ -10,7 +10,7 @@ export default ({region}) => {
       <div className="hero">
         
       </div>
-      <Planner region={region}/>
+      <Planner/>
       </section>
     </React.Fragment>
   )
