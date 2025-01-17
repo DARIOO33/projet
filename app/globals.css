@@ -7,8 +7,10 @@
 }
 
 .container {
-  margin: auto;
-  height: auto;
+  
+  position: relative;
+  margin:  auto;
+  margin-top: 4rem;
   width: 74rem;
 }
 
