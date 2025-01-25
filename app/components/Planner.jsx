@@ -25,9 +25,9 @@ export default () => {
         region={region} 
         setRegion={setRegion}/>
         
-        <DatePickerYearsOrder value={value} setValue={setValue}/>
+        {/* <DatePickerYearsOrder value={value} setValue={setValue}/> */}
         </div>
-        <Searchbutton country={country} region={region} value={value}/>
+        <Searchbutton country={country} region={region} />
       </form>
   )
 }

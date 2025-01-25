@@ -1,13 +1,13 @@
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Raleway } from 'next/font/google'
+// import { Raleway } from 'next/font/google'
 
 
-const raleway = Raleway({
-  weight: '300',
-  subsets: ['latin'],
-})
+// const raleway = Raleway({
+//   weight: '300',
+//   subsets: ['latin'],
+// })
 
 export const metadata = {
   title: "Create Next App",
