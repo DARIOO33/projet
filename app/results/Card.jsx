@@ -1,7 +1,7 @@
 import img from "./img1.jpg"
 import Image from "next/image"
 import "./results.css"
-export default ({name,location,timing,image}) => {
+export default ({name,location,timing,image,cat}) => {
     return (
         <div className="card">
             <Image
@@ -13,7 +13,7 @@ export default ({name,location,timing,image}) => {
             />
 
             <div className="card-content">
-                <span className="activity-type">Outdoor Adventure</span>
+                <span className="activity-type">{cat}</span>
 
                 <h3 className="activity-title">{name}</h3>
 

@@ -26,7 +26,7 @@ export default (params) => {
     <div className="card-container">
     {data.map((d) => {
   return d.activities.map((act, index) => {
-    return <Card key={index} name={act.activity} location={act.location} timing={act.timing} image={act.image}/>;
+    return <Card key={index} name={act.activity} location={act.location} timing={act.timing} image={act.image} cat={act.category}/>;
   });
 })}
 
